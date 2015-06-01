@@ -1,82 +1,67 @@
 <div>
-  <h1 class="c3"><span style=
-  "overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 57.00px; height: 60.00px;">
-  <img alt="" src="images/image01.jpg" style=
-  "width: 57.00px; height: 60.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-  title=""></span><span class="c13 c25">Eric Hurst</span></h1>
+  <h1 class="c3"><span class="c13 c25">Eric Hurst</span></h1>
 
-  <p class="c3"><span class="c18">2734 E 4430 S, Salt Lake City,
-  Utah 84124</span><span class=
+  <p class="c3"><span class="c18">1056 E Wilson Ave #3, Salt Lake City,
+  Utah 84105</span><span class=
   "c4 c18">&nbsp;&acirc;&euro;&cent;</span> <span class=
   "c18">435.565.1397</span><span class=
   "c4 c18">&nbsp;&acirc;&euro;&cent;</span> <span class=
   "c28"><a class="c21" href=
   "mailto:eric.hurst97@gmail.com">eric.hurst97@gmail.com</a></span></p>
 
-  <p class="c3 c22"></p>
 </div>
 
-<p class="c3 c11"><span style=
-"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 16.00px; height: 16.00px;">
-<img alt="" src="images/image00.jpg" style=
-"width: 16.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-title=""></span><span class=
-"c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c4 c8">Education</span></p>
+<p class="c3 c11"><span class="c4 c8">Education</span></p>
 <hr>
 
-<p class="c3 c11 c22"></p>
+<p>
+{% for school in edu %}
+<span> {{ school.school }} </span>
+<span> {{ school.grad_date }} </span> 
+<span> {{ school.gpa }} </span>
+{% endfor %}
+</p>
 
-<p class="c12 c14"><span class="c20 c6">University of
-Utah<br></span><span class="c1 c6">Computer Science
-Major</span><span class="c1"><br></span><span class=
-"c1 c6">Graduation Date:</span><span class="c1">&nbsp;May
-2014<br></span><span class="c1 c6">Cumulative
-GPA</span><span class="c1">:</span> <span class=
-"c27">3.63</span><span class="c1"><br></span><span class=
-"c1 c6">Notable Classes:</span><span class="c1">&nbsp;Image
-Processing, Advanced Compilers, Machine Learning, Network Systems,
-Probability and Statistics</span></p>
+<p class="c12 c14">
+<span class="c20 c6">University of Utah<br></span>
+<span class="c1 c6">Computer Science Major</span>
+<span class="c1 c6">Graduation Date:</span>
+<span class="c1">&nbsp;May 2014<br></span>
+<span class="c1 c6">Cumulative GPA:</span>
+<span class="c27">3.63</span>
+<span class="c1 c6">Notable Classes:</span>
+<span class="c1">&nbsp;Image Processing, Advanced Compilers, Machine Learning, Network Systems, Probability and Statistics</span>
+</p>
 
-<p class="c3 c11"><span style=
-"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 16.00px; height: 16.00px;">
-<img alt="" src="images/image00.jpg" style=
-"width: 16.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-title=""></span><span class="c0">&nbsp;</span><span class=
-"c4 c8">Skills</span></p>
+<p class="c3 c11"><span class="c4 c8">Skills</span></p>
 <hr>
 
-<p class="c3 c11 c22"></p>
+<p class="c14 c12">
+<span class="c2 c6">Computer Languages:</span>
+<br/>
+<span class="c9 c1">Extensive Knowledge:</span>
+<span class="c1">Python, C, C#, Javascript, PostgreSQL, HTML/CSS, Bash</span>
+<br/>
+<span>Basic Knowledge: Racket, Clojure, d3.js, jqPlot, jQuery, Objective C, Java/Android</span>
+</p>
 
-<p class="c14 c12"><span class="c1 c6">Computer
-Languages:</span><span class="c1 c6 c9"><br></span><span class=
-"c9 c1">Extensive Knowle</span><span class=
-"c1">dge:</span><span class="c1 c6">&nbsp;</span><span class=
-"c1">Python, C, C#, Javascript, PostgreSQL, HTML/CSS, Bash<br>
-Basic Knowledge: Racket, Clojure, d3.js, jqPlot, jQuery, Objective
-C, Java/Android</span></p>
+<p class="c14 c12">
+<span class="c1 c6">Platforms:</span>
+<span class="c1">Linux, Android, iOS, PS Vita</span>
+</p>
 
-<p class="c14 c12"><span class=
-"c1 c6">Platforms:</span><span class="c1">&nbsp;Linux, Android,
-iOS, PS Vita</span></p>
+<p class="c14 c12">
+<span class="c1 c6">Spoken Languages:</span>
+<span>English, Portuguese (Brazilian)</span>
+</p>
 
-<p class="c14 c12"><span class="c1 c6">Spoken</span> <span class=
-"c9 c1 c6">Languages</span><span class="c1 c6">:
-&nbsp;</span><span class="c1">English, Portuguese
-(Brazilian)</span></p>
-
-<p class="c3 c11"><span style=
-"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 16.00px; height: 16.00px;">
-<img alt="" src="images/image00.jpg" style=
-"width: 16.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-title=""></span><span class="c0">&nbsp;</span><span class=
-"c4 c8">Releva</span><span class="c8">nt</span> <span class=
-"c4 c8">Work Experience</span></p>
+<p class="c3 c11">
+<span class="c4 c8">Relevant Work Experience</span>
+</p>
 <hr>
 
-<p class="c3 c11 c22"></p>
 
 <p class="c5 c19"><span class="c1 c6">May 2014 - Current</span></p>
-
 <p class="c5 c19"><span class="c20 c6">Fusion IO/Sandisk, Salt Lake
 City, UT</span></p>
 
@@ -99,7 +84,7 @@ I</span></p>
 <p class="c5 c19"><span class="c1 c6">May 2013 - May
 2014</span></p>
 
-<p class="c5 c19"><span class="c20 c6">Fusion IO, &nbsp;Salt Lake
+<p class="c5 c19"><span class="c20 c6">Fusion IO, Salt Lake
 City, UT</span></p>
 
 <p class="c5 c19"><span class="c1 c6">Software Engineer
@@ -147,38 +132,31 @@ Intern</span></p>
 
 <p class="c3 c7"></p>
 
-<p class="c3 c12"><span style=
-"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 16.00px; height: 16.00px;">
-<img alt="" src="images/image00.jpg" style=
-"width: 16.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-title=""></span><span class="c4 c8">Activities</span></p>
+<p class="c3 c12">
+<span class="c4 c8">Activities</span>
+</p>
 <hr>
-
-<p class="c3 c7"></p>
 
 <ul class="c2 lst-kix_atuq0qti182g-0 start">
-  <li class="c26 c10"><span class=
-  "c1 c6">2009-2011</span><span class=
-  "c9 c1 c6"><br></span><span class="c1 c6">LDS Missionary in
-  Manaus, Brazil for 2 Years<br>
-  Description:</span><span class="c1">&nbsp;Served as a religious
+  <li class="c26 c10">
+	<span class="c1 c6">2009-2011</span>
+  	<span class="c1 c6">LDS Missionary in Manaus, Brazil for 2 Years</span><br>
+  	<span>Description:</span><span class="c1">Served as a religious
   missionary for the Church of Jesus Christ of Latter Day Saints
   for 2 complete years, where I met and taught people about the
-  doctrines of the church</span><span class="c1 c6"><br>
-  Skills learned:</span><span class="c1">&nbsp;Ability to set goals
+  doctrines of the church<br></span>
+	<span class="c1 c6">Skills learned:</span>
+	<span class="c1">Ability to set goals
   and make plans, Work with others to accomplish goals, Communicate
   and teach others, Learned to speak Portuguese
-  fluently.</span></li>
+  fluently.</span>
+	</li>
 </ul>
 
-<p class="c5"><span style=
-"overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 16.00px; height: 16.00px;">
-<img alt="" src="images/image00.jpg" style=
-"width: 16.00px; height: 16.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-title=""></span><span class="c8">Projects</span></p>
+<p class="c5">
+<span class="c8">Projects</span>
+</p>
 <hr>
-
-<p class="c3 c7"></p>
 
 <ul class="c2 lst-kix_yu17bkw028ry-0 start">
   <li class="c3 c10"><span class="c1">Have released two different
@@ -192,9 +170,3 @@ title=""></span><span class="c8">Projects</span></p>
   "http://www.google.com/url?q=http%3A%2F%2Fwww.origamikami.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGybFLBAOqdnJcjKUBN-VLRY_Fkcw">
   www.origamikami.com</a></span></li>
 </ul>
-
-<div>
-  <p class="c3 c22"></p>
-
-  <p class="c22 c26"></p>
-</div>
