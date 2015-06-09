@@ -4,12 +4,31 @@ p {
 }
 
 img.profile {
-    height: 400px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+    float: left;
 }
 
 body div {
     width: 700px;
+}
+
+body div#splash {
+    height: 400px;
+}
+body div#content {
+    height: 300px;
+}
+
+div#content div {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    line-height: 150px;
+}
+
+body div#footer {
+    height: 200px;
 }
