@@ -3,16 +3,8 @@ img.profile {
     float: left;
 }
 
-div#content div {
-    display: inline-block;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid black;
-    line-height: 150px;
-}
 
 body div#footer {
     height: 200px;
 }
+
