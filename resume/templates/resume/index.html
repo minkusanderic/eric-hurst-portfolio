@@ -14,22 +14,23 @@
 <p class="c3 c11"><span class="c4 c8">Education</span></p>
 <hr>
 
-<p>
+<div id="education">
 {% for school in edu %}
-<span> {{ school.school }} </span>
-<span> {{ school.grad_date }} </span> 
-<span> {{ school.gpa }} </span>
+    <div>{{ school.school }} </div>
+    <div>Graduation Date: {{ school.grad_date }} </div> 
+    <div>GPA: {{ school.gpa }} </div>
+    <div id="classes">
+    <ul>
+    {% for c in school.class_set.all %}
+        <li> {{ c.name }} </li>
+    {% endfor %}
+    </ul>
+    </div>
 {% endfor %}
-</p>
+</div>
 
 <p class="c12 c14">
-<span class="c20 c6">University of Utah<br></span>
 <span class="c1 c6">Computer Science Major</span>
-<span class="c1 c6">Graduation Date:</span>
-<span class="c1">&nbsp;May 2014<br></span>
-<span class="c1 c6">Cumulative GPA:</span>
-<span class="c27">3.63</span>
-<span class="c1 c6">Notable Classes:</span>
 <span class="c1">&nbsp;Image Processing, Advanced Compilers, Machine Learning, Network Systems, Probability and Statistics</span>
 </p>
 
