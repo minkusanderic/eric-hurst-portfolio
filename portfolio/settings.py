@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'resume',
     'home',
+    'projects',
 )
 
 MIDDLEWARE_CLASSES = (
