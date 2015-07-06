@@ -1,5 +1,59 @@
 {% extends 'home/base.html' %}
 
 {% block content %}
-Hello, Blog!
+<article>
+<header>
+<h1>
+What's your Python Sign?
+</h1>
+<time pubdate datetime="2015-07-06">Now</time>
+</header>
+<p>
+Back fromt he 70's, I see more and more astronomical signs being asked of people. Here we write a simple python function to determine your sign.
+</p>
+<pre>
+def astro_sign(birth_date):
+    return "Virgo"
+</pre>
+</article>
+
+<article>
+<header>
+<h1>
+The Zen of Python
+</h1>
+<time pubdate datetime="2015-07-06">Now</time>
+</header>
+<p>
+There is a little know easter egg in the python implementation known as the Zen of python
+</p>
+<pre>
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</pre>
+
+<p>
+This zen represents the "python" way. Python is a language known to have one "right" way to style and structure code. This leads to a stronger sense of community and more consistant (readable) code in general.
+</p>
+</article>
 {% endblock %}
