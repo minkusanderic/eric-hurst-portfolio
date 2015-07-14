@@ -7,11 +7,15 @@ img.profile {
 body div#footer {
     height: 200px;
 }
+body {
+background-color: #dddddd;
+}
 
 .popout {
 -webkit-box-shadow: 0px 5px 10px 1px rgba(191,191,191,1);
 -moz-box-shadow: 0px 5px 10px 1px rgba(191,191,191,1);
 box-shadow: 0px 5px 10px 1px rgba(191,191,191,1);
+background-color: white;
 }
 
 .round-corner {
