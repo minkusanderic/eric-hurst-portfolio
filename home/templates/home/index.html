@@ -2,25 +2,24 @@
 {% load staticfiles %} 
 
 {% block content %}
-  <div id="splash" class="jumbotron row-fluid popout">
-    <div class="span12">
-      <img width="200px" height="200px" style="margin:10px;"class="img-circle pull-left popout" src="{% static "profile.jpg" %}">
+  <div id="splash" class="row-fluid">
+    <div class="col-md-12 jumbotron popout">
+      <div class="col-md-3">
+      <img width="100%"  class="img-circle pull-left popout" src="{% static "profile.jpg" %}">
+      </div>
 
+      <div class="col-md-9">
       <h1>Eric Hurst</h1>
 
       <h2>Salt Lake City, Utah</h2>
 
-      <h2>Python devloper, Programming enthusiest and Ultimate
+      <h2>Python developer, Programming expert and Ultimate
       Frisbee player</h2>
+      </div>
     </div>
   </div>
 
   <div id="content" class="row">
-      <div class="col-md-4 text-center">
-        <div class="round-corner popout">
-          Projects
-        </div>
-      </div >
 
       <div class="col-md-4 text-center">
         <div class="round-corner popout">
@@ -33,11 +32,13 @@
           Resume
         </div>
       </div >
+      <div class="col-md-4 text-center">
+        <div class="round-corner popout">
+          Contact Me 
+        </div>
+      </div >
   </div>
 
   <div id="footer" class="row-fluid">
-    <div class="col-md-12 text-center round-corner popout">
-      Contact Me
-    </div>
   </div>
 {% endblock %}
