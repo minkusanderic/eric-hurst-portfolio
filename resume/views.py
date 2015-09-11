@@ -9,4 +9,9 @@ def index(request):
     context = {'edu': schools}
     return render(request, 'resume/index.html', context)
 
+def datascience(request):
+    schools = Education.objects.all()
+    context = {'edu': schools}
+    return render(request, 'resume/data-science.html', context)
+
 # Create your views here.
