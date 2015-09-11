@@ -7,7 +7,7 @@ from resume.models import Education
 def index(request):
     schools = Education.objects.all()
     context = {'edu': schools}
-    return render(request, 'resume/index.html', context)
+    return render(request, 'resume/data-science.html', context)
 
 def datascience(request):
     schools = Education.objects.all()
