@@ -3,10 +3,13 @@
 {% block content %}
 <article style="padding:15px;" class="row-fluid popout round-corner">
 <div>
-  <h1><span>Eric Hurst</span></h1>
+  <div class="pull-left"><h1><span>Eric Hurst</span></h1></div>
+  <div class="pull-right">
   <strong>Salt Lake City, Utah, U.S.A</strong>
 
   <p><a href="mailto:eric.hurst97@gmail.com">eric.hurst97@gmail.com</a></p>
+  </div>
+  <div class="clearfix"></div>
 
 </div>
 
@@ -41,15 +44,21 @@
 
 <div id="education" class="col-md-12">
 {% for school in edu %}
-    <div>{{ school.school }} </div>
+    <div><strong>{{ school.school }}</strong></div>
+    <div>Degree: B.S. of Computer Science</div>
     <div>Graduation Date: {{ school.grad_date }} </div> 
     <div>GPA: {{ school.gpa }} </div>
     <div id="classes">
-    <ul>
+    <div class="col-md-12 text-center"><strong>Notable Classes</strong></div>
+    <div>
     {% for c in school.class_set.all %}
         <li> {{ c.name }} </li>
     {% endfor %}
-    </ul>
+      <div class="col-md-3">Image Processing</div>
+      <div class="col-md-3">Machine Learning</div>
+      <div class="col-md-3">Advanced Compilers</div>
+      <div class="col-md-3">Probability and Statistics</div>
+    </div>
     </div>
 {% endfor %}
 </div>
@@ -102,22 +111,12 @@
 
 <div class="row-fluid">
 <div class="col-md-6">
-<h4>Origami Kami <small><br/><a href="origamikami.com">origamikami.com</a></h4>
-<p>Designed and Publish on the PS Vita platform. Lead group of other programmers and interfaced with artists and designers</p>
+<h4>Sudoku Image Solver</h4>
+<p>Using image processing, Developed an algorithm to extract and recognize characters in a sudoku puzzle image. Then, using this information, solved the sudodu and displayed the results in the image. Skills used: Image processing, Machine learning, OCR.</p>
 </div>
 <div class="col-md-6">
-<h4>Battery Live Wallpaper <small><br/><a href="https://play.google.com/store/apps/details?id=com.regionsyx.battery">https://play.google.com/store/apps/details?id=com.regionsyx.battery</a></small></h4>
-<p>Published live wallpaper for the Android platform that showed the current phone's battery level using a number of blocks</p>
-</div>
-<div class="col-md-6">
-<h4>Hitchhikers Quotes <small><br/><a href="https://play.google.com/store/apps/details?id=com.regionsyx.hitchhiker">https://play.google.com/store/apps/details?id=com.regionsyx.hitchhiker</a></small></h4>
-<p>Published Android app that showed various quotes from The Hitchhiker's Guide to the Galaxy.</p>
-</div>
-<div class="col-md-6">
-<h4>Portfolio Site <small><br/><a href="abouterichurst.com">abouterichurst.com</a></small></h4>
-<p>Built custom portfolio website to showcase Django and Python knowledge</p>
-</div>
-<div class="col-md-6">
+<h4>Sheet Music Scanner</h4>
+<p>Processed and identified the notes on a page of sheet music. Used machine learning techniques to learn the pitch and duration of notes, and then predict the pitch and duration of a note. Skills used: SciPy, SVM, K-means, Image Processing.</p>
 </div>
 </div>
 <div class="clearfix"></div>
