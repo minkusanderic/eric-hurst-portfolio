@@ -1,0 +1,125 @@
+{% extends "home/raw.html" %}
+
+{% block content %}
+<article style="padding:15px;" class="row-fluid">
+<div>
+  <div class="pull-left"><h1><span>Eric Hurst</span></h1></div>
+  <div class="pull-right">
+  <strong>Salt Lake City, Utah, U.S.A</strong>
+
+  <p><a href="mailto:eric.hurst97@gmail.com">eric.hurst97@gmail.com</a></p>
+  </div>
+  <div class="clearfix"></div>
+
+</div>
+
+<hr>
+<section>
+<h2>Skills</h2>
+<div class="row-fluid">
+<div class="col-md-6">
+<h4>Python</h4>
+<p>3 years of Python wide ranging development experience. Web development, scripting, tools development, unittest, subprocess</p>
+</div>
+<div class="col-md-6">
+<h4>Data Science</h4>
+<p>IPython, D3.js, SQL, Image Processing, Machine Learning, Visualization, Experimentation, Large Scale emailing.</p>
+</div>
+<div class="col-md-6">
+<h4>Back End Web Development</h4>
+<p>Database management PostgresSQL, Django experience, RESTful API's. </p>
+</div>
+<div class="col-md-6">
+<h4>Linux</h4>
+<p>Proficient in vim/emacs, scripting, command line proficent, Server management</p>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+
+<hr>
+
+<section>
+<h2>Education</h2>
+
+<div id="education" class="col-md-12">
+{% for school in edu %}
+    <div><strong>{{ school.school }}</strong></div>
+    <div>Degree: B.S. of Computer Science</div>
+    <div>Graduation Date: {{ school.grad_date }} </div> 
+    <div>GPA: {{ school.gpa }} </div>
+    <div id="classes">
+    <div class="col-md-12 text-center"><strong>Notable Classes</strong></div>
+    <div>
+    {% for c in school.class_set.all %}
+        <li> {{ c.name }} </li>
+    {% endfor %}
+      <div class="col-md-3">Image Processing</div>
+      <div class="col-md-3">Machine Learning</div>
+      <div class="col-md-3">Advanced Compilers</div>
+      <div class="col-md-3">Probability and Statistics</div>
+    </div>
+    </div>
+{% endfor %}
+</div>
+<div class="clearfix"></div>
+</section>
+
+<hr>
+
+<section>
+<h2>Experience</h2>
+
+<div>
+<p class="pull-right">May 2014 - Current</p>
+<p class="h3">SanDisk <small>Salt Lake City, UT</small></p>
+<p>Firmware Engineer I</p>
+<ul>
+  <li>Desinged and implemented embedded system to store realtively large number of log entries in limited embedded memory</li>
+  <li>Ported python firmware emulation tools from Windows to Linux</li>
+  <li>Implemented unit and system testing using python unittest</li>
+</ul>
+</div>
+
+<div>
+<p class="pull-right">May 2013 - May 2014</p>
+<p class="h3">Fusion IO<small> Salt Lake City, UT</small></p>
+<p>Software Engineer Intern</p>
+
+<ul>
+  <li>Implemented and maintained automated testing and regression system</li>
+  <li>Designed and presented performance experiments on development hardware</li>
+  <li>Collected, processed and visualized statistics on nightly regressions</li>
+  <li>Skills used: Advanced Linux administration, Python, database administration, jqPlot, PostgreSQL</li>
+</ul>
+</div>
+
+
+<div>
+<p class="pull-right">May 2012 - April 2013</p>
+<p class="h3">V3 Systems<small> Salt Lake City, UT</small></p>
+
+<p>Software Engineer Intern</p>
+
+<ul>
+  <li>Implemented and maintained automated build and testing system</li>
+  <li>Basic development and bug fixing on backend web services</li>
+  <li>General python development</li>
+  <li>Skills used: Advanced Linux administration, Python, PostgreSQL, SQLAlchemy, WSGI</li>
+</ul>
+</div>
+
+<div class="row-fluid">
+<div class="col-md-6">
+<h4>Sudoku Image Solver</h4>
+<p>Using image processing, Developed an algorithm to extract and recognize characters in a sudoku puzzle image. Then, using this information, solved the sudodu and displayed the results in the image. Skills used: Image processing, Machine learning, OCR.</p>
+</div>
+<div class="col-md-6">
+<h4>Sheet Music Scanner</h4>
+<p>Processed and identified the notes on a page of sheet music. Used machine learning techniques to learn the pitch and duration of notes, and then predict the pitch and duration of a note. Skills used: SciPy, SVM, K-means, Image Processing.</p>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+</article>
+{% endblock %}
